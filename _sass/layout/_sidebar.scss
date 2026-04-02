@@ -17,13 +17,13 @@
     margin-top: 1em;
   }
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    height: auto;
-    overflow-y: visible;               // Add scrollbar if the sidebar is too long
-    position: relative;
-    top: $masthead-height;
-    padding-top: 0;
-  }
+@media screen and (min-width: $sidebar-screen-min-width) {
+  height: auto !important;
+  overflow-y: visible !important;
+  position: relative !important;
+  top: 0 !important;
+  padding-top: 0;
+}
 
   @include breakpoint($large) {
     @include span(2 of 12);
